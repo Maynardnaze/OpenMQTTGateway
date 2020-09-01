@@ -1221,7 +1221,7 @@ JsonObject& process_atc(JsonObject& BLEdata) {
   double temperature = value_from_service_data(servicedata, 12, 4, false) / 10;
   double humidity = value_from_service_data(servicedata, 16, 2, false);
   double battery = value_from_service_data(servicedata, 18, 2, false);
-  double voltage = value_from_service_data(servicedata, 20, 4, false)/1000;
+  double voltage = value_from_service_data(servicedata, 20, 4, false) / 1000;
 
   //Set Json values
   BLEdata.set("tempc", (double)temperature);
